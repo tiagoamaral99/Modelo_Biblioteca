@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace m14_trabalho_modelo {
+namespace projeto_biblioteca_M14_15
+{
     class Utils {
         static public byte[] ImagemParaVetor(string ficheiro) {
             FileStream fs = new FileStream(ficheiro, FileMode.Open, FileAccess.Read);
@@ -19,5 +20,5 @@ namespace m14_trabalho_modelo {
             fs.Write(imagem, 0, imagem.GetUpperBound(0));
             fs.Close();
         }
-    }
+    } 
 }

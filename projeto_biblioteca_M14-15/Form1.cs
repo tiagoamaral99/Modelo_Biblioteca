@@ -16,5 +16,16 @@ namespace projeto_biblioteca_M14_15
         {
             InitializeComponent();
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void livrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frLivros f = new frLivros();
+            f.Show();
+        }
     }
 }
